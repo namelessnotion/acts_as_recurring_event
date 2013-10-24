@@ -18,10 +18,14 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rails', ['>= 3', '< 5']
   s.add_runtime_dependency 'ice_cube', '0.10.0'
 
-  s.add_development_dependency 'rspec-rails', '2.14.0'
+  #databases
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'mysql2', '~> 0.3.7'
   s.add_development_dependency 'pg'
+  #testing
+  s.add_development_dependency 'rspec-rails', '2.14.0'
+  s.add_development_dependency 'capybara'
   s.add_development_dependency 'guard'
   s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'guard-spork'
 end
